@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    
+}
+.one{
+    margin-top: 50px;
+    padding: 40px;
+    box-shadow: 5px 5px 20px gray;
+    border-radius: 10px;
+
+}
+body{
+    padding: 100px;
+}
+#trans{
+    display: none;
+}
+.d{
+    background-color: slateblue;
+}
+.w{
+    background-color: salmon;   
+}
+.b{
+    background-color: orange;  
+}
+.status{
+    margin: 0 10px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+   
+}

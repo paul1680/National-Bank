@@ -74,16 +74,23 @@
             //const deponum = parseFloat(depoam);
 
             const deponum = getInput('depoamount');
+            if(deponum < 0 ){
+                alert('Deposit Number Can Not be Negative.');
+            }
+            else{
+            updateSpan('current', deponum);
+            updateSpan('currentb', deponum);
+            
+            document.getElementById('depoamount').value='';
+            }
+
 
             //const current = document.getElementById('current').innerText;
             //const currentDepo = parseFloat(current);
             //const totalDepo = deponum + currentDepo;
             //document.getElementById('current').innerText = totalDepo;
 
-            updateSpan('current', deponum);
-            updateSpan('currentb', deponum);
-            
-            document.getElementById('depoamount').value='';
+
 
           })
             function updateSpan(id, deponum){
